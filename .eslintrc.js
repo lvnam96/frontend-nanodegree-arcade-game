@@ -36,12 +36,10 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'standard',
-    'plugin:react/recommended',
     // 'plugin:@typescript-eslint/eslint-recommended',
     // 'plugin:@typescript-eslint/recommended',
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // 'prettier/@typescript-eslint',
-    'standard-react',
   ],
   plugins: [
     'prettier',
@@ -72,22 +70,10 @@ module.exports = {
     ],
     'comma-dangle': 'off',
     'space-before-function-paren': ['warn', 'always'],
-    'react/jsx-handler-names': [
-      'warn',
-      {
-        eventHandlerPrefix: 'on',
-        eventHandlerPropPrefix: 'handle',
-      },
-    ],
     'babel/camelcase': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/unbound-method': 'off',
+    // '@typescript-eslint/explicit-function-return-type': 'off',
+    // '@typescript-eslint/unbound-method': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'warn',
-    'react/jsx-indent-props': ['warn', 'first'],
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
     'node/no-unsupported-features/es-syntax': [
       'error',
       {
@@ -96,19 +82,19 @@ module.exports = {
     ],
   },
   overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': [
-          'error',
-          {
-            allowExpressions: true,
-          },
-        ],
-        '@typescript-eslint/unbound-method': 'error',
-      },
-    },
+    // {
+    //   // enable the rule specifically for TypeScript files
+    //   files: ['*.ts', '*.tsx'],
+    //   rules: {
+    //     '@typescript-eslint/explicit-function-return-type': [
+    //       'error',
+    //       {
+    //         allowExpressions: true,
+    //       },
+    //     ],
+    //     '@typescript-eslint/unbound-method': 'error',
+    //   },
+    // },
     // {
     //   "files": ["webpack.config.*.js"],
     //   "rules": {
