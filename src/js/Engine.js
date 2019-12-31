@@ -231,6 +231,7 @@ class Engine {
 
     canvas.style.opacity = 1;
     doc.addEventListener('keydown', this.handleKeyInput);
+    addMoreBtn.style.display = 'inline-block';
     addMoreBtn.addEventListener('click', this.handleAddingBugs);
     newGameBtn.removeEventListener('click', this.init);
     newGameBtn.style.display = 'none';
